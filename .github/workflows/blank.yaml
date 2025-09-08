@@ -1,23 +1,19 @@
-name:  "my first workflow"
-on:
+name: my frist workflow
+
+on: 
   push:
-   branches:
-     - main
-     - feature
+    branches:
+      - main
+      - 'releases/**'
 jobs:
-   job:
-    name: display version
-    runs-on: runner-1
-    steps:
+  job:
+   name: test
+   runs-on: runner-1
 
-    - name: Checkout
-      uses: actions/checkout@v5.0.0
+   steps:
+     - name: my frist  step
+     - run: echo "i love my india"
  
- 
-    - name: terraform-version
 
-      uses: dflook/terraform-version@v1.29.1
-      with:
-         github_dependency_token: ${{ secrets.DEPENDENCY_GITHUB_TOKEN }}
   
   
