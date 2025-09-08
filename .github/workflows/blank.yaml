@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - 'releases/**'
+permissions:
+      contents: read
+      issues: write
+      
 jobs:
   job:
    name: test
