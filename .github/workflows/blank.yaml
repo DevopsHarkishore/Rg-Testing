@@ -6,8 +6,8 @@ on:
       - main
       
 permissions:
-      contents: read
-      issues: write
+      id-token: read
+      contents: write
       
 jobs:
   job:
