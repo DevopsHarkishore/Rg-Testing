@@ -1,22 +1,11 @@
-name: myworkflow
-
-on:  
+name:  "my first workflow"
+on:
   push:
-    branches:
-      - main
-      - feature
+   branches:
+     - main
+     - feature
 jobs:
-   my_first_job:
-            name: My first job
-   my_second_job:
-            name: My second jobb
-       runs-on: runner-1
-         
-          
-
-    
+  job:
+  name: terraform version
+  runs-on: runner-1
   
-        
-
- 
-
