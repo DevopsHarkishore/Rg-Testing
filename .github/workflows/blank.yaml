@@ -12,7 +12,7 @@ jobs:
 
    steps:
      - name: my frist  step
-     - run: echo "i love my india"
+       run: echo i love my india
  
 
   
