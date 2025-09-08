@@ -5,7 +5,8 @@ on:
      - main
      - feature
 jobs:
-  job:
-  name: terraform version
-  runs-on: runner-1
+   job:
+    name: terraform version
+    runs-on: runner-1
+  
   
