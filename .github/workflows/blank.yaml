@@ -6,7 +6,17 @@ on:
      - feature
 jobs:
    job:
-    name: terraform version
+    name: display version
     runs-on: runner-1
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v5.0.0
+ 
+ 
+    - name: Terraform installer
+ 
+      uses: autero1/action-terraform@v3.0.1 
+
   
   
