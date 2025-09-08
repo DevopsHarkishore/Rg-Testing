@@ -14,9 +14,10 @@ jobs:
       uses: actions/checkout@v5.0.0
  
  
-    - name: Terraform installer
- 
-      uses: autero1/action-terraform@v3.0.1 
+    - name: terraform-version
 
+      uses: dflook/terraform-version@v1.29.1
+      with:
+         github_dependency_token: ${{ secrets.DEPENDENCY_GITHUB_TOKEN }}
   
   
