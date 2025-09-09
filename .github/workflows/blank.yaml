@@ -10,7 +10,7 @@ permissions:
       contents: read
       
 jobs:
-  terraform-init-plan:
+  terraform-init-plan-job:
    name: terraform-init-plan
    runs-on: runner-1
 
@@ -57,10 +57,10 @@ jobs:
        continue-on-error: true
        working-directory: rg
        
-  terraform-apply:
+  terraform-apply-job:
    name: terraform apply
    runs-on: runner-1
-   needs: terraform-init-plan
+   needs: terraform-init-plan-job
    environment: dev
 
    steps:
@@ -82,7 +82,7 @@ jobs:
        
      - name: Terraform apply
        id: apply
-       run: terraform apply -auto-approve
+       run: terraform apply --auto--approve
        working-directory: rg
 
                      
