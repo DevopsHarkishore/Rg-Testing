@@ -61,7 +61,7 @@ jobs:
    name: terraform apply
    runs-on: runner-1
    needs: terraform-init-plan-job
-   environment: dev
+   environment: rg
 
    steps:
      - name: Checkout
