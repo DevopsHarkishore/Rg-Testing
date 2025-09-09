@@ -1,10 +1,15 @@
 name: my frist workflow
 
-on: workflow_dispatch
-  # push:
-  #   branches:
-  #     - main
+on:
+ pull_request:
+    branches:
+      - main
+ push:
+    
+    branches:
+      - main     
       
+
 permissions:
       id-token: write
       contents: read
@@ -62,6 +67,7 @@ jobs:
    runs-on: runner-1
    needs: terraform-init-plan-job
    environment: Dev
+   if: github.ref == 'refs/heads/main'
 
    steps:
      - name: Checkout
