@@ -18,4 +18,9 @@ resource "azurerm_resource_group" "rg4" {
   location = "West Europe"
 }
 
+resource "azurerm_resource_group" "rg7" {
+  name     = "testing7"
+  location = "West Europe"
+}
+
 
