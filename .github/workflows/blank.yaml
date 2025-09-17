@@ -27,7 +27,7 @@ jobs:
       - name: Install Terraform
         uses: little-core-labs/install-terraform@2.0.0
         with: 
-          version: 1.13.2
+          version: 1.13.0
 
       - name: Azure Login
         uses: Azure/login@v2.3.0
