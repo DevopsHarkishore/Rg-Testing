@@ -6,8 +6,8 @@ terraform {
     }
   }
 backend "azurerm" {
-    resource_group_name  = "RG111"
-    storage_account_name = "infrastorage143"
+    resource_group_name  = "Rg-Stg"
+    storage_account_name = "infrastorage14"
     container_name       = "infracontainer"
     key                  = "myproject.tfstate"
   }
@@ -15,5 +15,5 @@ backend "azurerm" {
 
 provider "azurerm" {
   features {}
-  subscription_id = "07181b5e-cb73-4072-8605-0c0f9f4ae28f"
+  subscription_id = "b7e2d3dd-2fa8-4498-90b2-8ed4b08e15ee"
 }
