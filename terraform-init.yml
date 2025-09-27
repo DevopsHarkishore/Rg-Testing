@@ -1,1 +1,11 @@
-
+steps:
+      - task: TerraformTask@5
+        displayName: Terraform init
+        inputs:
+          provider: 'azurerm'
+          command: 'init'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/Environment/dev'
+          backendServiceArm: 'SC-HKP'
+          backendAzureRmStorageAccountName: 'stgterraformstate143'
+          backendAzureRmContainerName: 'container4480'
+          backendAzureRmKey: '27thsep.tfstate'
